@@ -1232,73 +1232,7 @@
     <script src="js/color-settings.js"></script>
 
     <script src="js/gallery.js"></script>
-<script>
-(function(){
-  function copyText(text){
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      return navigator.clipboard.writeText(text);
-    }
-    // fallback
-    return new Promise(function(resolve){
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand('copy'); } catch(e){}
-      document.body.removeChild(ta);
-      resolve();
-    });
-  }
 
-  function feedback(el){
-    el.classList.add('copied');
-    const oldTitle = el.getAttribute('title') || '';
-    el.setAttribute('title', 'تم النسخ');
-    setTimeout(function(){
-      el.classList.remove('copied');
-      el.setAttribute('title', oldTitle);
-    }, 1500);
-  }
-
-  function handleCopy(el){
-    const targetSel = el.getAttribute('data-copy-target');
-    let text = el.getAttribute('data-copy-text') || '';
-
-    if (targetSel && !text){
-      const node = document.querySelector(targetSel);
-      if (node){
-        // لو العنصر رابط <a> انسخ الـ href
-        if (node.tagName && node.tagName.toLowerCase() === 'a' && node.href){
-          text = node.href;
-        } else {
-          // باقي العناصر: انسخ النص أو القيمة كما كان سابقاً
-          text = (node.textContent || node.value || '').trim();
-        }
-      }
-    }
-
-    if (!text) return;
-    copyText(text).then(function(){ feedback(el); });
-  }
-
-  // بالنقر
-  document.addEventListener('click', function(e){
-    const btn = e.target.closest('.paw-copy');
-    if (!btn) return;
-    handleCopy(btn);
-  });
-
-  // عبر الكيبورد (Enter/Space)
-  document.addEventListener('keydown', function(e){
-    const btn = e.target.closest('.paw-copy');
-    if (!btn) return;
-    if (e.key === 'Enter' || e.key === ' '){
-      e.preventDefault();
-      handleCopy(btn);
-    }
-  });
-})();
-</script>
 
 
 
