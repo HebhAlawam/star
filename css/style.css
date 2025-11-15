@@ -15039,3 +15039,16 @@ bdi {
   direction: ltr;
 }
 
+
+
+/* على الشاشات الصغيرة: خلي كل عنصر بسطر واحد */
+@media (max-width: 767.98px) {
+  .masonry-gallery.grid-four-item .isotope-item {
+    width: 100% !important;   /* ياخد كل العرض */
+    position: static !important; /* يلغي position:absolute من Isotope */
+  }
+
+  #grid.masonry-gallery.grid-four-item {
+    height: auto !important; /* خليه ياخد ارتفاع العناصر العادي */
+  }
+}
