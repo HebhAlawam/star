@@ -1,0 +1,115 @@
+/**
+ * Donation Methods Cards
+ * Professional styling for donation method cards
+ */
+
+.donate-methods {
+  .featured-block {
+    .inner-box {
+      padding: var(--spacing-6);
+      text-align: center;
+      height: 100%;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 2px solid var(--color-border);
+      transition: all var(--transition-base);
+      
+      &:hover {
+        border-color: var(--color-primary);
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
+      
+      .content {
+        h3 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: var(--spacing-3);
+          font-size: var(--font-size-lg);
+          font-weight: var(--font-weight-bold);
+          color: var(--color-text);
+          margin-bottom: var(--spacing-4);
+          
+          .icon-accent {
+            color: var(--color-primary);
+            font-size: var(--font-size-xl);
+          }
+        }
+        
+        .text {
+          font-size: var(--font-size-base);
+          color: var(--color-text);
+          line-height: var(--line-height-relaxed);
+          margin-bottom: var(--spacing-4);
+          
+          strong {
+            color: var(--color-primary);
+            font-weight: var(--font-weight-bold);
+            display: block;
+            margin-top: var(--spacing-2);
+            font-size: var(--font-size-lg);
+            word-break: break-word;
+          }
+          
+          .phone-accent {
+            color: var(--color-primary);
+            font-weight: var(--font-weight-semibold);
+            direction: ltr;
+            display: inline-block;
+          }
+          
+          a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: var(--font-weight-semibold);
+            transition: color var(--transition-fast);
+            
+            &:hover {
+              color: var(--color-primary-dark);
+              text-decoration: underline;
+            }
+          }
+        }
+        
+        .paw-copy {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+          background: var(--color-bg-light);
+          border-radius: var(--radius-full);
+          color: var(--color-primary);
+          cursor: pointer;
+          transition: all var(--transition-fast);
+          font-size: var(--font-size-lg);
+          
+          &:hover {
+            background: var(--color-primary);
+            color: var(--color-white);
+            transform: scale(1.1);
+          }
+          
+          &:active {
+            transform: scale(0.95);
+          }
+          
+          &:focus {
+            outline: var(--focus-ring-width) solid var(--focus-ring-color);
+            outline-offset: 2px;
+          }
+          
+          &.copied {
+            background: var(--color-success);
+            color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}
+

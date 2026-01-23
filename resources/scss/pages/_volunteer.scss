@@ -1,0 +1,370 @@
+/**
+ * Volunteer Page Styles
+ * Professional volunteer page with cards, form, and FAQ
+ */
+
+.volunteer-page {
+  // Why Volunteer Section
+  .why-volunteer {
+    padding: var(--spacing-20) 0;
+    
+    @media (max-width: 991px) {
+      padding: var(--spacing-12) 0;
+    }
+    
+    .benefit-card {
+      height: 100%;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+      
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
+      
+      .icon-box {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto var(--spacing-6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-bg-light);
+        border-radius: var(--radius-full);
+        transition: all var(--transition-base);
+        
+        .icon {
+          font-size: var(--font-size-3xl);
+          color: var(--color-primary);
+        }
+      }
+      
+      &:hover .icon-box {
+        background: var(--color-primary);
+        transform: scale(1.1);
+        
+        .icon {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+  
+    // Opportunities Section
+    .volunteer-opportunities {
+      padding: var(--spacing-20) 0;
+      background: var(--color-bg-light);
+      
+      @media (max-width: 991px) {
+        padding: var(--spacing-12) 0;
+      }
+      
+      .opportunity-card {
+        // Uses .featured-block component styles (from _cards.scss)
+        // Additional badge styling
+        .badges {
+          margin-top: var(--spacing-4);
+          display: flex;
+          gap: var(--spacing-2);
+          flex-wrap: wrap;
+          justify-content: center;
+          
+          .badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: var(--font-weight-medium);
+            white-space: nowrap;
+            
+            &:first-child {
+              background: var(--color-bg-light);
+              color: var(--color-primary);
+            }
+            
+            &:last-child {
+              background: rgba(231, 174, 65, 0.1);
+              color: var(--color-accent);
+            }
+          }
+        }
+      }
+    }
+    
+    // Role Cards - Clickable cards (entire card is clickable, no CTA button)
+    .volunteer-roles {
+      .role-card.clickable-card {
+        position: relative;
+        background: var(--color-white);
+        border-radius: var(--radius-md);
+        padding: var(--spacing-8);
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid var(--color-border-light);
+        box-shadow: var(--shadow-base);
+        transition: all var(--transition-base);
+        cursor: pointer;
+        
+        &:hover {
+          transform: translateY(-4px);
+          box-shadow: var(--shadow-lg);
+          border-color: var(--color-primary);
+        }
+        
+        .role-icon {
+          width: 80px;
+          height: 80px;
+          margin: 0 auto var(--spacing-6);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--color-bg-light);
+          border-radius: var(--radius-full);
+          transition: all var(--transition-base);
+          
+          i {
+            font-size: var(--font-size-3xl);
+            color: var(--color-primary);
+            transition: all var(--transition-base);
+          }
+        }
+        
+        &:hover .role-icon {
+          background: var(--color-primary);
+          transform: scale(1.1);
+          
+          i {
+            color: var(--color-white);
+          }
+        }
+        
+        h4 {
+          font-size: var(--font-size-xl);
+          font-weight: var(--font-weight-bold);
+          color: var(--color-text);
+          margin-bottom: var(--spacing-4);
+          transition: color var(--transition-fast);
+        }
+        
+        &:hover h4 {
+          color: var(--color-primary);
+        }
+        
+        p {
+          color: var(--color-text-light);
+          margin-bottom: var(--spacing-4);
+          line-height: var(--line-height-relaxed);
+          flex-grow: 1;
+        }
+        
+        .role-type {
+          margin-top: auto;
+          font-size: var(--font-size-sm);
+          padding: 4px 12px;
+          border-radius: var(--radius-full);
+          background: var(--color-bg-light);
+          color: var(--color-text-light);
+          font-weight: var(--font-weight-medium);
+        }
+      }
+    }
+  
+  // Volunteer Form Section
+  .volunteer-form-section {
+    padding: var(--spacing-20) 0;
+    
+    @media (max-width: 991px) {
+      padding: var(--spacing-12) 0;
+    }
+    
+    .form-container {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-8);
+      box-shadow: var(--shadow-md);
+      
+      @media (max-width: 767px) {
+        padding: var(--spacing-6);
+      }
+      
+      .form-section-title {
+        margin-bottom: var(--spacing-8);
+        padding-bottom: var(--spacing-4);
+        border-bottom: 2px solid var(--color-border-light);
+        
+        h3 {
+          font-size: var(--font-size-2xl);
+          font-weight: var(--font-weight-bold);
+          color: var(--color-text);
+        }
+      }
+      
+      // Multi-select checkboxes styling
+      .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--spacing-3);
+        margin-top: var(--spacing-2);
+        
+        .form-check {
+          flex: 0 0 auto;
+          margin: 0;
+          
+          .form-check-input {
+            width: 18px;
+            height: 18px;
+            margin-top: 4px;
+            cursor: pointer;
+            
+            &:focus {
+              border-color: var(--color-primary);
+              box-shadow: 0 0 0 0.2rem rgba(1, 146, 220, 0.25);
+            }
+          }
+          
+          .form-check-label {
+            margin-right: var(--spacing-2);
+            cursor: pointer;
+            font-size: var(--font-size-base);
+            color: var(--color-text);
+          }
+        }
+      }
+      
+      // File upload styling
+      .file-upload-wrapper {
+        position: relative;
+        
+        input[type="file"] {
+          position: absolute;
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        
+        .file-upload-label {
+          display: inline-flex;
+          align-items: center;
+          gap: var(--spacing-3);
+          padding: var(--spacing-3) var(--spacing-5);
+          background: var(--color-bg-light);
+          border: 2px dashed var(--color-border);
+          border-radius: var(--radius-base);
+          cursor: pointer;
+          transition: all var(--transition-fast);
+          
+          &:hover {
+            border-color: var(--color-primary);
+            background: rgba(1, 146, 220, 0.05);
+          }
+          
+          .icon {
+            color: var(--color-primary);
+            font-size: var(--font-size-lg);
+          }
+          
+          .file-name {
+            color: var(--color-text);
+            font-size: var(--font-size-sm);
+          }
+        }
+        
+        .file-upload-note {
+          margin-top: var(--spacing-2);
+          font-size: var(--font-size-sm);
+          color: var(--color-text-muted);
+        }
+      }
+      
+      // Consent checkbox
+      .consent-checkbox {
+        margin-top: var(--spacing-6);
+        padding: var(--spacing-4);
+        background: var(--color-bg-light);
+        border-radius: var(--radius-base);
+        
+        .form-check {
+          display: flex;
+          align-items: flex-start;
+          gap: var(--spacing-3);
+          
+          .form-check-input {
+            margin-top: 4px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            
+            &:focus {
+              border-color: var(--color-primary);
+              box-shadow: 0 0 0 0.2rem rgba(1, 146, 220, 0.25);
+            }
+          }
+          
+          .form-check-label {
+            flex: 1;
+            cursor: pointer;
+            font-size: var(--font-size-sm);
+            color: var(--color-text);
+            line-height: var(--line-height-normal);
+          }
+        }
+      }
+    }
+  }
+  
+  // FAQ Section
+  .volunteer-faq {
+    padding: var(--spacing-20) 0;
+    background: var(--color-bg-light);
+    
+    @media (max-width: 991px) {
+      padding: var(--spacing-12) 0;
+    }
+  }
+  
+  // Final CTA Section
+  .volunteer-cta {
+    padding: var(--spacing-20) 0;
+    
+    @media (max-width: 991px) {
+      padding: var(--spacing-12) 0;
+    }
+    
+    .cta-content {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+      
+      h2 {
+        font-size: var(--font-size-3xl);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text);
+        margin-bottom: var(--spacing-4);
+        
+        @media (max-width: 991px) {
+          font-size: var(--font-size-2xl);
+        }
+      }
+      
+      .contact-hint {
+        margin-top: var(--spacing-6);
+        padding-top: var(--spacing-6);
+        border-top: 1px solid var(--color-border);
+        font-size: var(--font-size-base);
+        color: var(--color-text-light);
+        
+        a {
+          color: var(--color-primary);
+          text-decoration: none;
+          font-weight: var(--font-weight-semibold);
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+

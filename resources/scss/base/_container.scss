@@ -1,0 +1,40 @@
+/**
+ * Container & Layout
+ * Consistent container widths and spacing
+ */
+
+.auto-container {
+  width: 100%;
+  max-width: var(--container-xl);
+  padding: 0 var(--container-padding-x);
+  margin: 0 auto;
+  position: relative;
+  
+  @media (max-width: 1199px) {
+    max-width: var(--container-lg);
+  }
+  
+  @media (max-width: 991px) {
+    max-width: var(--container-md);
+  }
+  
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding: 0 var(--spacing-4);
+  }
+}
+
+// Bootstrap container overrides for RTL
+[dir="rtl"] .container {
+  padding-left: var(--container-padding-x);
+  padding-right: var(--container-padding-x);
+}
+
+// Page wrapper
+.page-wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8">
+  <title>من نحن | STAR</title>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link id="theme-color-file" rel="stylesheet" href="css/color-themes/blue-theme.css">
+
+    <link rel="shortcut icon" href="images/favicon_1.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon_1.png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Font Awesome 6 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+  <div class="pet">
+    <div id="preloading"></div>
+  </div>
+        
+  <!-- Header (استخدمي نفس الهيدر الموجود عندك لتوحيد الموقع) -->
+        <header class="main-header header-style-two">
+    <!-- Header Top -->
+          <div class="header-top">
+            <div class="auto-container">
+              <div class="top-inner">
+                <div class="clearfix">
+                  <div class="top-left mt-2">
+                    <ul class="clearfix mb-0">
+                      <li><span class="icon flaticon-map-marker"></span> سوريا، دمشق</li>
+                      <li>
+                        <a href="tel:+963959869575">
+                          <span class="icon flaticon-telephone-handle-silhouette"></span>
+                    <bdi>+963 959 869 575</bdi>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:support@star.com">
+                          <span class="icon fas fa-envelope"></span>
+                          support@star.com
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+            <div class="top-right clearfix p-2" style="display:flex; align-items:center; gap:12px; justify-content:flex-end;">
+                    <div class="social-icon">
+                <ul class="clearfix" style="margin:0;">
+                  <li><a href="#" aria-label="Facebook"><span class="fab fa-square-facebook"></span></a></li>
+                  <li><a href="#" aria-label="WhatsApp"><span class="fab fa-whatsapp"></span></a></li>
+                  <li><a href="#" aria-label="Instagram"><span class="fab fa-instagram"></span></a></li>
+                      </ul>
+                    </div>
+
+              <div class="emergency-cta" style="display:inline-flex; gap:8px; align-items:center;">
+                      <a href="https://wa.me/963959869575?text=%D8%AD%D8%A7%D9%84%D8%A9%20%D8%A5%D8%B3%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20-%20"
+                        class="theme-btn btn-style-one"
+                        target="_blank" rel="noopener"
+                        aria-label="حالة إسعافية؟ تواصل عبر واتساب">
+                        <span class="fas fa-ambulance" aria-hidden="true"></span>
+                        حالة إسعافية؟ 
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- Header Upper -->
+            <div class="container">
+                <div class="header-upper">
+                    <div class="clearfix">
+                        <div class="pull-right logo-outer">
+            <div class="logo">
+              <a href="index.html"><img src="images/logo-2.png" width="200" alt="STAR Logo" title=""></a>
+                            </div>
+                        </div>
+
+                         <div class="outer-box">
+                            <div class="btn-box">
+              <a href="donation.html" class="theme-btn btn-style-two">تبرع الآن</a>
+                            </div>
+                            </div>
+
+                        <div class="pull-left upper-right clearfix">
+                            <div class="nav-outer clearfix">
+                                <nav class="main-menu menu-4 navbar navbar-expand-md">
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                    <span><i class="fas fa-bars"></i></span>
+                                        </button>
+                                    </div>
+                                    <div class="navbar-collapse collapse clearfix">
+                                        <ul class="navigation clearfix">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li class="current"><a href="about.html">من نحن</a></li>
+                    <li class="dropdown"><a href="#">التبني</a>
+                      <ul>
+                        <li><a href="pets.html">قطط</a></li>
+                        <li><a href="pets.html">كلاب</a></li>
+                        <li><a href="pets.html">غير ذلك</a></li>
+                                                </ul>
+                                                    </li>
+                    <li><a href="donation.html">التبرّع</a></li>
+                    <li><a href="news.html">الأخبار</a></li>
+                    <li><a href="contact.html">التواصل</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+          </div>
+
+                        </div>
+                    </div>
+                </div>
+            
+    <!-- Sticky Header (اختياري إن كان موجود عندك) -->
+  </header>
+  <!-- End Header -->

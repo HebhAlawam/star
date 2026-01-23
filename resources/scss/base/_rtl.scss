@@ -1,0 +1,71 @@
+/**
+ * RTL Support
+ * Right-to-Left layout adjustments
+ */
+
+html[dir="rtl"],
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+// Float adjustments
+.float-right {
+  float: left !important;
+}
+
+.float-left {
+  float: right !important;
+}
+
+// Margin/Padding utilities for RTL
+.mr-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.ml-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.pr-0 {
+  padding-left: 0 !important;
+  padding-right: inherit;
+}
+
+.pl-0 {
+  padding-right: 0 !important;
+  padding-left: inherit;
+}
+
+// Text alignment
+.text-left {
+  text-align: right !important;
+}
+
+.text-right {
+  text-align: left !important;
+}
+
+// Transform origin for animations
+[dir="rtl"] * {
+  transform-origin: right center;
+}
+
+// Bootstrap RTL overrides
+[dir="rtl"] .dropdown-menu {
+  right: auto;
+  left: 0;
+  text-align: right;
+}
+
+[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+}
+
+[dir="rtl"] .nav-link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+

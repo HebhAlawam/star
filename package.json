@@ -1,0 +1,49 @@
+{
+  "name": "star-animal-rescue",
+  "version": "1.0.0",
+  "description": "Modernized STAR Animal Rescue website - prepared for Laravel integration",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint resources/js --ext .js",
+    "lint:fix": "eslint resources/js --ext .js --fix",
+    "format": "prettier --write \"resources/**/*.{js,scss,html}\"",
+    "format:check": "prettier --check \"resources/**/*.{js,scss,html}\""
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^7.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "sass": "^1.69.5",
+    "vite": "^7.3.1"
+  },
+  "optionalDependencies": {
+    "countdown": "^2.6.0",
+    "isotope-layout": "^3.0.6",
+    "photoswipe": "^5.4.2",
+    "swiper": "^11.0.5",
+    "wow.js": "^1.2.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not IE 11"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

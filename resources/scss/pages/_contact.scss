@@ -1,0 +1,247 @@
+/**
+ * Contact Page Styles
+ * Shared styles for contact page components
+ * Uses same card style as volunteer page (benefit-card)
+ */
+
+// Contact Page Scoped Styles
+.contact-page {
+  // Contact Section Wrapper
+  .contact-section {
+    padding: var(--section-padding-y) 0;
+    
+    @media (max-width: 991px) {
+      padding: var(--section-padding-y-sm) 0;
+    }
+  }
+
+  .contact-content-wrapper {
+    margin-top: var(--spacing-8);
+    
+    @media (max-width: 991px) {
+      margin-top: var(--spacing-6);
+    }
+  }
+
+  // Contact Info Cards - Refined spacing and alignment
+  .contact-info-cards {
+    margin-bottom: var(--spacing-4);
+    
+    .contact-info-card {
+      height: 100%;
+      text-align: center;
+      padding: var(--spacing-6) var(--spacing-4);
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-base);
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+      
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
+      
+      .benefit-icon {
+        width: auto;
+        height: auto;
+        margin: 0 auto var(--spacing-4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border-radius: 0;
+        transition: all var(--transition-base);
+        
+        i {
+          font-size: var(--font-size-3xl);
+          color: var(--color-text);
+          width: 1em;
+          height: 1em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      
+      &:hover .benefit-icon {
+        background: transparent;
+        transform: scale(1.05);
+        
+        i {
+          color: var(--color-primary);
+        }
+      }
+      
+      h4 {
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text);
+        margin-bottom: var(--spacing-3);
+      }
+      
+      p {
+        color: var(--color-text-light);
+        margin-bottom: 0;
+        line-height: var(--line-height-relaxed);
+        font-size: var(--font-size-sm);
+        
+        a {
+          color: var(--color-primary);
+          transition: color var(--transition-fast);
+          text-decoration: none;
+          
+          &:hover {
+            color: var(--color-primary-dark);
+            text-decoration: underline;
+          }
+          
+          &:focus-visible {
+            outline: 2px solid var(--color-primary);
+            outline-offset: 2px;
+            border-radius: var(--radius-sm);
+          }
+        }
+      }
+      
+      // WhatsApp Card - Slightly More Prominent
+      &--whatsapp {
+        border: 2px solid rgba(37, 211, 102, 0.2);
+        
+        .benefit-icon i {
+          color: #25d366; // WhatsApp green
+        }
+        
+        &:hover {
+          border-color: rgba(37, 211, 102, 0.4);
+          box-shadow: 0 8px 24px rgba(37, 211, 102, 0.15);
+          
+          .benefit-icon i {
+            color: #25d366;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+
+  .contact-privacy-note {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Contact Form Wrapper
+  .contact-form-wrapper {
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    max-width: 900px;
+    margin: 0 auto;
+    
+    &:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    
+    @media (max-width: 767px) {
+      padding: var(--spacing-6) var(--spacing-4) !important;
+    }
+    
+    h3 {
+      color: var(--color-text);
+      font-size: var(--font-size-2xl);
+      
+      @media (max-width: 767px) {
+        font-size: var(--font-size-xl);
+      }
+    }
+  }
+
+  .contact-form {
+    .form-control,
+    .form-select {
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-base);
+      padding: var(--spacing-3) var(--spacing-4);
+      font-size: var(--font-size-base);
+      transition: all var(--transition-base);
+      width: 100%;
+      
+      &:focus {
+        border-color: var(--color-primary);
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(1, 146, 220, 0.1);
+      }
+      
+      &:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+    }
+    
+    .form-label {
+      color: var(--color-text);
+      margin-bottom: var(--spacing-2);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-semibold);
+    }
+    
+    button[type="submit"] {
+      &:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  // Emergency Alert Box
+  .emergency-alert-box {
+    transition: all var(--transition-base);
+    margin-top: var(--spacing-6);
+    
+    &:hover {
+      box-shadow: 0 8px 24px rgba(255, 193, 7, 0.2);
+    }
+    
+    @media (max-width: 767px) {
+      padding: var(--spacing-6) var(--spacing-5) !important;
+    }
+    
+    a {
+      &:focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+    }
+  }
+}
+
+// Contact Info Cards Responsive
+@media (max-width: 991px) {
+  .contact-page .contact-info-cards .contact-info-card {
+    margin-bottom: var(--spacing-4);
+  }
+}
+
+// Accordion RTL Alignment Fix (Contact FAQ)
+#contactFaqAccordion {
+  .accordion-button {
+    text-align: right;
+    direction: rtl;
+    padding: var(--spacing-4) var(--spacing-5);
+    
+    &:not(.collapsed) {
+      box-shadow: none;
+    }
+    
+    span[style*="flex"] {
+      direction: rtl;
+      text-align: right;
+    }
+  }
+  
+  .accordion-body {
+    text-align: right;
+    direction: rtl;
+    padding: var(--spacing-5);
+  }
+}
+

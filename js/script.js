@@ -109,49 +109,46 @@
     }
 
 
-    if ($('.testimonial-carousel-two').length) {
-        $('.testimonial-carousel-two').owlCarousel({
-            loop: true,
-            margin: 60,
-            nav: true,
-            rtl: true,
-            navText: [
-                '<i class="fa fa-long-arrow-left"></i>',
-                '<i class="fa fa-long-arrow-right"></i>'
-            ],
-            dots: false,
-            autoWidth: false,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    autoWidth: false
-                },
-                // 480: {
-                //     items: 1,
-                //     autoWidth: false
-                // },
-                991: {
-                    items: 1,
-                    autoWidth: false
-                },
-                992: {
-                    items: 2,
-                    autoWidth: false
-                },
-                1200: {
-                    items: 2,
-                    autoWidth: false
-                },
-                1400: {
-                    items: 2,
-                    autoWidth: false
-                }
-            }
-        });
-    };
+    // Owl Carousel disabled - not used in any pages
+    // if ($('.testimonial-carousel-two').length) {
+    //     $('.testimonial-carousel-two').owlCarousel({
+    //         loop: true,
+    //         margin: 60,
+    //         nav: true,
+    //         rtl: true,
+    //         navText: [
+    //             '<i class="fa fa-long-arrow-left"></i>',
+    //             '<i class="fa fa-long-arrow-right"></i>'
+    //         ],
+    //         dots: false,
+    //         autoWidth: false,
+    //         autoplay: true,
+    //         autoplayTimeout: 3000,
+    //         autoplayHoverPause: true,
+    //         responsive: {
+    //             0: {
+    //                 items: 1,
+    //                 autoWidth: false
+    //             },
+    //             991: {
+    //                 items: 1,
+    //                 autoWidth: false
+    //             },
+    //             992: {
+    //                 items: 2,
+    //                 autoWidth: false
+    //             },
+    //             1200: {
+    //                 items: 2,
+    //                 autoWidth: false
+    //             },
+    //             1400: {
+    //                 items: 2,
+    //                 autoWidth: false
+    //             }
+    //         }
+    //     });
+    // }
 
     if ($('.accrodion-grp').length) {
 
@@ -274,76 +271,72 @@
 
 
 
-    //Single Item Carousel
-    if ($('.single-item-carousel').length) {
-        $('.single-item-carousel').owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: true,
-            rtl: true,
-            smartSpeed: 700,
-            autoplay: 5000,
-            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 1
-                },
-
-                768: {
-                    items: 1
-                },
-
-                800: {
-                    items: 1
-                },
-                960: {
-                    items: 1
-                },
-                1024: {
-                    items: 1
-                }
-            }
-        });
-    }
+    //Single Item Carousel - Disabled: Owl Carousel not used
+    // if ($('.single-item-carousel').length) {
+    //     $('.single-item-carousel').owlCarousel({
+    //         loop: true,
+    //         margin: 0,
+    //         nav: true,
+    //         rtl: true,
+    //         smartSpeed: 700,
+    //         autoplay: 5000,
+    //         navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+    //         responsive: {
+    //             0: {
+    //                 items: 1
+    //             },
+    //             480: {
+    //                 items: 1
+    //             },
+    //             768: {
+    //                 items: 1
+    //             },
+    //             800: {
+    //                 items: 1
+    //             },
+    //             960: {
+    //                 items: 1
+    //             },
+    //             1024: {
+    //                 items: 1
+    //             }
+    //         }
+    //     });
+    // }
 
 
-    //Testimonial Item Carousel
-    if ($('.testimonials-item-carousel').length) {
-        $('.testimonials-item-carousel').owlCarousel({
-            loop: true,
-            margin: 0,
-            nav: true,
-            smartSpeed: 700,
-            rtl: true,
-            autoplay: 5000,
-            navText: ['<span class="fa fa-long-arrow-left"></span>', '<span class="fa fa-long-arrow-right"></span>'],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 1
-                },
-
-                768: {
-                    items: 1
-                },
-
-                800: {
-                    items: 1
-                },
-                960: {
-                    items: 1
-                },
-                1024: {
-                    items: 1
-                }
-            }
-        });
-    }
+    //Testimonial Item Carousel - Disabled: Owl Carousel not used
+    // if ($('.testimonials-item-carousel').length) {
+    //     $('.testimonials-item-carousel').owlCarousel({
+    //         loop: true,
+    //         margin: 0,
+    //         nav: true,
+    //         smartSpeed: 700,
+    //         rtl: true,
+    //         autoplay: 5000,
+    //         navText: ['<span class="fa fa-long-arrow-left"></span>', '<span class="fa fa-long-arrow-right"></span>'],
+    //         responsive: {
+    //             0: {
+    //                 items: 1
+    //             },
+    //             480: {
+    //                 items: 1
+    //             },
+    //             768: {
+    //                 items: 1
+    //             },
+    //             800: {
+    //                 items: 1
+    //             },
+    //             960: {
+    //                 items: 1
+    //             },
+    //             1024: {
+    //                 items: 1
+    //             }
+    //         }
+    //     });
+    // }
 
 
     //Date Picker
@@ -565,61 +558,64 @@ $(document).ready(function () {
         $(this).addClass("active");
     });
 
-    // Owl Carousel
+    // Owl Carousel - Disabled: Owl Carousel not used in any pages
+    // var owl = $('.owl-carousel');
+    // if (owl.length && typeof $.fn.owlCarousel !== 'undefined') {
+    //     owl.owlCarousel({
+    //         items: 1,
+    //         loop: true,
+    //         rtl: true,
+    //         margin: 10,
+    //         autoplay: true,
+    //         autoplayTimeout: 10000,
+    //         autoplayHoverPause: true,
+    //         autoHeight: false,
+    //         dots: false,
+    //         nav: true,
+    //         navText: ["<i class='fas fa-paw'>", "<i class='fas fa-paw'>"],
+    //         responsive: {
+    //             0: {
+    //                 items: 1,
+    //             },
+    //             480: {
+    //                 items: 1,
+    //             },
+    //             768: {
+    //                 items: 1,
+    //             }
+    //         }
+    //     });
+    // }
 
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items: 1,
-        loop: true,
-        rtl: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        autoplayHoverPause: true,
-        autoHeight: false,
-        dots: false,
-        nav: true,
-        navText: ["<i class='fas fa-paw'>", "<i class='fas fa-paw'>"],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            480: {
-                items: 1,
-            },
-            768: {
-                items: 1,
-            }
-        }
-    });
-
-    if ($(".new_custom").length) {
-        var owl = $('.new_custom-carousel');
-        owl.owlCarousel({
-            items: 1,
-            loop: true,
-            rtl: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 8000,
-            autoplayHoverPause: true,
-            autoHeight: false,
-            dots: false,
-            nav: true,
-            navText: ["<i class='fas fa-paw'>", "<i class='fas fa-paw'>"],
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                480: {
-                    items: 1,
-                },
-                768: {
-                    items: 1,
-                }
-            }
-        });
-    }
+    // if ($(".new_custom").length) {
+    //     var owl = $('.new_custom-carousel');
+    //     if (owl.length && typeof $.fn.owlCarousel !== 'undefined') {
+    //         owl.owlCarousel({
+    //             items: 1,
+    //             loop: true,
+    //             rtl: true,
+    //             margin: 10,
+    //             autoplay: true,
+    //             autoplayTimeout: 8000,
+    //             autoplayHoverPause: true,
+    //             autoHeight: false,
+    //             dots: false,
+    //             nav: true,
+    //             navText: ["<i class='fas fa-paw'>", "<i class='fas fa-paw'>"],
+    //             responsive: {
+    //                 0: {
+    //                     items: 1,
+    //                 },
+    //                 480: {
+    //                     items: 1,
+    //                 },
+    //                 768: {
+    //                     items: 1,
+    //                 }
+    //             }
+    //         });
+    //     }
+    // }
     // if ($(".profile .slide").length) {
     //     var owl = $('.owl-carousel');
     //     owl.owlCarousel({
@@ -649,24 +645,26 @@ $(document).ready(function () {
     // }
 
 
-    $('.play').on('click', function () {
-        owl.trigger('play.owl.autoplay', [1000])
-    })
-    $('.stop').on('click', function () {
-        owl.trigger('stop.owl.autoplay')
-    })
+    // Owl Carousel controls disabled - not used in any pages
+    // $('.play').on('click', function () {
+    //     owl.trigger('play.owl.autoplay', [1000])
+    // })
+    // $('.stop').on('click', function () {
+    //     owl.trigger('stop.owl.autoplay')
+    // })
 
-    // Mousewheel Animation
-
-    var owl = $(".pet .new_custom .owl-carousel");
-    owl.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY > 0) {
-            owl.trigger('next.owl');
-        } else {
-            owl.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });
+    // Mousewheel Animation - Disabled: Owl Carousel not used
+    // var owl = $(".pet .new_custom .owl-carousel");
+    // if (owl.length && typeof $.fn.owlCarousel !== 'undefined') {
+    //     owl.on('mousewheel', '.owl-stage', function (e) {
+    //         if (e.deltaY > 0) {
+    //             owl.trigger('next.owl');
+    //         } else {
+    //             owl.trigger('prev.owl');
+    //         }
+    //         e.preventDefault();
+    //     });
+    // }
 
     // Wow Animation
 

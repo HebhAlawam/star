@@ -1,0 +1,57 @@
+/**
+ * Main SCSS Entry Point
+ * STAR Animal Rescue Website
+ */
+
+// 1. Design Tokens (Variables)
+@import 'tokens';
+
+// 2. Base Styles
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/rtl';
+@import 'base/container';
+
+// 3. Bootstrap CSS
+// Bootstrap is imported via npm package
+// Full Bootstrap included - can be optimized later by importing only needed modules
+// For now, importing compiled CSS for stability
+// TODO Phase 3: Import Bootstrap SCSS selectively
+
+// 4. Font Awesome CSS (imported in JS)
+// Font Awesome styles loaded via JavaScript
+
+// 5. Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/sections';
+@import 'components/forms';
+@import 'components/images';
+@import 'components/scroll-to-top';
+@import 'components/preloader';
+@import 'components/accordion';
+@import 'components/news-cards';
+@import 'components/donation-methods';
+@import 'components/donation-purpose';
+@import 'components/stories';
+
+// 6. Layout
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/footer';
+
+// 7. Pages
+@import 'pages/volunteer';
+@import 'pages/contact';
+// @import 'pages/news'; // Removed - file deleted
+// @import 'pages/home';
+// @import 'pages/about';
+
+// 8. Utilities
+@import 'utilities/spacing';
+@import 'utilities/helpers';
+@import 'utilities/responsive';
+
+// 9. Legacy compatibility (temporary - will be removed in Phase 3)
+// Note: Legacy styles will be gradually migrated to modular SCSS
+

@@ -1,0 +1,356 @@
+/**
+ * Card Components
+ * Consistent card styling across all card types
+ */
+
+// Base card styles
+.featured-block,
+.card,
+.gallery-item {
+  position: relative;
+  margin-bottom: var(--spacing-6);
+  
+  .inner-box {
+    position: relative;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-base);
+    transition: all var(--transition-base);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+  }
+}
+
+// Featured block cards (Donate, Adopt, Volunteer)
+.featured-block {
+  .inner-box {
+    padding: var(--spacing-8);
+    text-align: center;
+    
+    .icon-box {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto var(--spacing-6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-bg-light);
+      border-radius: var(--radius-full);
+      transition: all var(--transition-base);
+      
+      .icon {
+        font-size: var(--font-size-3xl);
+        color: var(--color-primary);
+      }
+    }
+    
+    &:hover .icon-box {
+      background: var(--color-primary);
+      transform: scale(1.1);
+      
+      .icon {
+        color: var(--color-white);
+      }
+    }
+    
+    h3 {
+      margin-bottom: var(--spacing-4);
+      font-size: var(--font-size-xl);
+      
+      a {
+        color: var(--color-text);
+        transition: color var(--transition-fast);
+        
+        &:hover {
+          color: var(--color-primary);
+        }
+      }
+    }
+    
+    .text {
+      color: var(--color-text-light);
+      margin-bottom: var(--spacing-6);
+      line-height: var(--line-height-relaxed);
+      flex-grow: 1;
+    }
+    
+    .theme-btn {
+      margin-top: auto;
+      width: 100%;
+      justify-content: center;
+      
+      @media (min-width: 768px) {
+        width: auto;
+        min-width: 160px;
+      }
+    }
+  }
+}
+
+// Gallery cards
+.gallery-item {
+  .inner-box {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    
+    .image-box {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform var(--transition-slow);
+      }
+    }
+    
+    &:hover .image-box img {
+      transform: scale(1.05);
+    }
+    
+    .overlay-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    &:hover .overlay-box {
+      opacity: 1;
+    }
+    
+    .overlay-inner {
+      text-align: center;
+      color: var(--color-white);
+      
+      .text {
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-semibold);
+        margin-bottom: var(--spacing-4);
+      }
+      
+      .link-btn {
+        color: var(--color-white);
+        font-size: var(--font-size-xl);
+        
+        &:hover {
+          color: var(--color-accent);
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+// FAQ/Accordion cards
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  margin-bottom: var(--spacing-4);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .accordion-button {
+    padding: var(--spacing-4) var(--spacing-6);
+    font-weight: var(--font-weight-semibold);
+    background: var(--color-bg-light);
+    border: none;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background var(--transition-fast);
+    
+    &:hover {
+      background: var(--color-white);
+    }
+    
+    &:focus {
+      outline: var(--focus-ring-width) solid var(--focus-ring-color);
+      outline-offset: -2px;
+    }
+    
+    .card-title {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-3);
+      
+      span {
+        color: var(--color-primary);
+      }
+    }
+  }
+  
+  .accordion-body {
+    padding: var(--spacing-4) var(--spacing-6);
+    background: var(--color-white);
+    line-height: var(--line-height-relaxed);
+    color: var(--color-text);
+  }
+}
+
+// Benefit cards (used in volunteer and contact pages)
+.benefit-card {
+  height: 100%;
+  text-align: center;
+  padding: var(--spacing-8);
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .benefit-icon {
+    width: auto;
+    height: auto;
+    margin: 0 auto var(--spacing-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border-radius: 0;
+    transition: all var(--transition-base);
+    
+    i {
+      font-size: var(--font-size-3xl);
+      color: var(--color-text);
+    }
+  }
+  
+  &:hover .benefit-icon {
+    background: transparent;
+    transform: scale(1.05);
+    
+    i {
+      color: var(--color-primary);
+    }
+  }
+  
+  h4 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-4);
+  }
+  
+  p {
+    color: var(--color-text-light);
+    margin-bottom: 0;
+    line-height: var(--line-height-relaxed);
+    
+    a {
+      color: var(--color-primary);
+      transition: color var(--transition-fast);
+      text-decoration: none;
+      
+      &:hover {
+        color: var(--color-primary-dark);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// News/Story cards (orange, yellow, purple variants)
+.card.orange,
+.card.yellow,
+.card.purple {
+  border-radius: var(--radius-md);
+  padding: var(--spacing-8);
+  margin-bottom: var(--spacing-6);
+  transition: all var(--transition-base);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto var(--spacing-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-2xl);
+    color: var(--color-white);
+  }
+  
+  h5 {
+    color: var(--color-white);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-4);
+    font-weight: var(--font-weight-bold);
+    
+    a {
+      color: inherit;
+      transition: opacity var(--transition-fast);
+      
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  
+  p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-6);
+    flex-grow: 1;
+  }
+  
+  .more a {
+    color: var(--color-white);
+    font-size: var(--font-size-xl);
+    transition: transform var(--transition-fast);
+    
+    &:hover {
+      transform: translateX(-4px);
+    }
+  }
+}
+
+.card.orange {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.card.yellow {
+  background: linear-gradient(135deg, var(--color-yellow) 0%, var(--color-accent-dark) 100%);
+}
+
+.card.purple {
+  background: linear-gradient(135deg, var(--color-purple) 0%, #7d1dd4 100%);
+}
+

@@ -1,0 +1,53 @@
+/**
+ * Responsive Utilities
+ * Helper classes for responsive behavior
+ */
+
+// Hide/show utilities
+@media (max-width: 991px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+// Container max-widths for text readability
+.text-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.text-container-wide {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+// Responsive images
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Responsive video
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; // 16:9
+  height: 0;
+  overflow: hidden;
+  
+  iframe,
+  video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+

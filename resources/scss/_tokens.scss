@@ -1,0 +1,192 @@
+/**
+ * Design Tokens
+ * Professional design system with 8px grid, consistent spacing, and accessibility
+ */
+
+// ============================================
+// Colors
+// ============================================
+:root {
+  // Primary Colors
+  --color-primary: #0192dc;
+  --color-primary-dark: #0077b3;
+  --color-primary-light: #33a8e0;
+  
+  // Accent Colors
+  --color-accent: #e7ae41;
+  --color-accent-dark: #d4982a;
+  --color-accent-light: #edc05f;
+  
+  // Secondary Colors
+  --color-yellow: #e5a62d;
+  --color-purple: #630abb;
+  --color-orange: var(--color-primary);
+  
+  // Neutral Colors
+  --color-white: #ffffff;
+  --color-off-white: #f8f9fa;
+  --color-light-gray: #d1d1d1;
+  --color-gray: #777777;
+  --color-dark-gray: #343434;
+  --color-black: #000000;
+  --color-text: #343434;
+  --color-text-light: #777777;
+  --color-text-muted: #999999;
+  
+  // Semantic Colors
+  --color-success: #28a745;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+  --color-info: var(--color-primary);
+  
+  // Background Colors
+  --color-bg: var(--color-white);
+  --color-bg-light: var(--color-off-white);
+  --color-bg-dark: var(--color-dark-gray);
+  --color-bg-pattern: #ecebf7;
+  
+  // Border Colors
+  --color-border: #e0e0e0;
+  --color-border-light: #f0f0f0;
+  --color-border-dark: #cccccc;
+  
+  // ============================================
+  // Typography
+  // ============================================
+  --font-family-heading: "Changa", "Almarai", "Noto Kufi Arabic", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-family-body: "Almarai", "Noto Sans Arabic", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-family-latin: "Inter", "Montserrat", "Open Sans", Arial, sans-serif;
+  
+  // Font Sizes (responsive scale)
+  --font-size-xs: 0.75rem;      // 12px
+  --font-size-sm: 0.875rem;     // 14px
+  --font-size-base: 1rem;       // 16px
+  --font-size-lg: 1.125rem;     // 18px
+  --font-size-xl: 1.25rem;      // 20px
+  --font-size-2xl: 1.5rem;      // 24px
+  --font-size-3xl: 1.875rem;    // 30px
+  --font-size-4xl: 2.25rem;     // 36px
+  --font-size-5xl: 3rem;        // 48px
+  
+  // Font Weights
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  // Line Heights
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+  
+  // ============================================
+  // Spacing (8px grid system)
+  // ============================================
+  --spacing-base: 8px;
+  
+  --spacing-0: 0;
+  --spacing-1: calc(var(--spacing-base) * 0.5);  // 4px
+  --spacing-2: var(--spacing-base);              // 8px
+  --spacing-3: calc(var(--spacing-base) * 1.5);  // 12px
+  --spacing-4: calc(var(--spacing-base) * 2);    // 16px
+  --spacing-5: calc(var(--spacing-base) * 2.5);  // 20px
+  --spacing-6: calc(var(--spacing-base) * 3);    // 24px
+  --spacing-8: calc(var(--spacing-base) * 4);    // 32px
+  --spacing-10: calc(var(--spacing-base) * 5);   // 40px
+  --spacing-12: calc(var(--spacing-base) * 6);   // 48px
+  --spacing-16: calc(var(--spacing-base) * 8);   // 64px
+  --spacing-20: calc(var(--spacing-base) * 10);  // 80px
+  --spacing-24: calc(var(--spacing-base) * 12);  // 96px
+  
+  // Section Spacing
+  --section-padding-y: var(--spacing-20); // 80px
+  --section-padding-y-sm: var(--spacing-12); // 48px
+  --container-padding-x: var(--spacing-4); // 16px
+  
+  // ============================================
+  // Border Radius
+  // ============================================
+  --radius-sm: 4px;
+  --radius-base: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  // ============================================
+  // Shadows
+  // ============================================
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  // ============================================
+  // Transitions
+  // ============================================
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+  
+  // ============================================
+  // Z-Index Scale
+  // ============================================
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+  
+  // ============================================
+  // Breakpoints (Bootstrap 5 compatible)
+  // ============================================
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+  
+  // ============================================
+  // Container Max Widths
+  // ============================================
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1320px;
+  
+  // ============================================
+  // Focus States (Accessibility)
+  // ============================================
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: var(--color-primary);
+  --focus-ring: 0 0 0 var(--focus-ring-width) var(--focus-ring-color);
+  --focus-ring-offset: 0 0 0 calc(var(--focus-ring-width) + var(--focus-ring-offset)) var(--color-bg),
+                       0 0 0 var(--focus-ring-width) var(--focus-ring-color);
+  
+  // ============================================
+  // Legacy Compatibility (will be removed)
+  // ============================================
+  --st_blue: var(--color-primary);
+  --st_orange: var(--color-accent);
+  --pt_yellow: var(--color-yellow);
+  --pt_purple: var(--color-purple);
+  --pt_orange: var(--color-primary);
+  --pt_white: var(--color-white);
+  --pt_nwhite: var(--color-light-gray);
+  --pt_pattern: var(--color-bg-pattern);
+  --pt_black: var(--color-black);
+  --pt_grey: var(--color-dark-gray);
+  --pt_font_1: var(--font-family-heading);
+  --pt_font_2: var(--font-family-body);
+  --font-body: var(--font-family-body);
+  --font-head: var(--font-family-heading);
+  --font-latin: var(--font-family-latin);
+}
+

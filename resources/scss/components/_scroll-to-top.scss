@@ -1,0 +1,71 @@
+/**
+ * Scroll to Top Button
+ * Professional floating scroll button
+ */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: var(--spacing-6);
+  left: var(--spacing-6);
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all var(--transition-base);
+  z-index: var(--z-fixed);
+  box-shadow: var(--shadow-lg);
+  border: none;
+  text-decoration: none;
+  
+  [dir="rtl"] & {
+    left: auto;
+    right: var(--spacing-6);
+  }
+  
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  &:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  &:active {
+    transform: translateY(-2px);
+  }
+  
+  &:focus {
+    outline: var(--focus-ring-width) solid var(--focus-ring-color);
+    outline-offset: 3px;
+  }
+  
+  .icon {
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+  }
+  
+  @media (max-width: 575px) {
+    width: 44px;
+    height: 44px;
+    bottom: var(--spacing-4);
+    left: var(--spacing-4);
+    
+    [dir="rtl"] & {
+      left: auto;
+      right: var(--spacing-4);
+    }
+  }
+}
+
