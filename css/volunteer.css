@@ -1,0 +1,1457 @@
+volunteer-page .volunteer-form-section .form-container .checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.volunteer-page .volunteer-form-section .form-container .checkbox-group .form-check {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.volunteer-page .volunteer-form-section .form-container .checkbox-group .form-check .form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.volunteer-page .volunteer-form-section .form-container .checkbox-group .form-check .form-check-input:focus {
+  border-color: #0192dc;
+  box-shadow: 0 0 0 0.2rem rgba(1, 146, 220, 0.25);
+}
+
+.volunteer-page .volunteer-form-section .form-container .checkbox-group .form-check .form-check-label {
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #343434;
+}
+
+.volunteer-page .volunteer-form-section .form-container .file-upload-wrapper {
+  position: relative;
+}
+
+.volunteer-page .volunteer-form-section .form-container .file-upload-wrapper input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.volunteer-page .volunteer-form-section .form-container .file-upload-wrapper .file-upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background: #f8f9fa;
+  border: 2px dashed #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.volunteer-page .volunteer-form-section .form-container .file-upload-wrapper .file-upload-label:hover {
+  border-color: #0192dc;
+  background: rgba(1, 146, 220, 0.05);
+}
+
+.volunteer-page .volunteer-form-section .form-container .file-upload-wrapper .file-upload-label .icon {
+  color: #0192dc;
+  font-size: 18px;
+}
+
+.volunteer-page .volunteer-form-section .form-container .file-upload-wrapper .file-upload-label .file-name {
+  color: #343434;
+  font-size: 14px;
+}
+
+.volunteer-page .volunteer-form-section .form-container .file-upload-wrapper .file-upload-note {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.volunteer-page .volunteer-form-section .form-container .consent-checkbox {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.volunteer-page .volunteer-form-section .form-container .consent-checkbox .form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.volunteer-page .volunteer-form-section .form-container .consent-checkbox .form-check .form-check-input {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.volunteer-page .volunteer-form-section .form-container .consent-checkbox .form-check .form-check-input:focus {
+  border-color: #0192dc;
+  box-shadow: 0 0 0 0.2rem rgba(1, 146, 220, 0.25);
+}
+
+.volunteer-page .volunteer-form-section .form-container .consent-checkbox .form-check .form-check-label {
+  flex: 1;
+  cursor: pointer;
+  font-size: 14px;
+  color: #343434;
+  line-height: 1.5;
+}
+
+.volunteer-page .volunteer-faq {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+@media (max-width: 991px) {
+  .volunteer-page .volunteer-faq {
+    padding: 48px 0;
+  }
+}
+
+.volunteer-page .volunteer-cta {
+  padding: 80px 0;
+}
+
+@media (max-width: 991px) {
+  .volunteer-page .volunteer-cta {
+    padding: 48px 0;
+  }
+}
+
+.volunteer-page .volunteer-cta .cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.volunteer-page .volunteer-cta .cta-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #343434;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+  .volunteer-page .volunteer-cta .cta-content h2 {
+    font-size: 24px;
+  }
+}
+
+.volunteer-page .volunteer-cta .cta-content .contact-hint {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 16px;
+  color: #777777;
+}
+
+.volunteer-page .volunteer-cta .cta-content .contact-hint a {
+  color: #0192dc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.volunteer-page .volunteer-cta .cta-content .contact-hint a:hover {
+  text-decoration: underline;
+}
+
+
+/* Volunteer Benefits Section - Lighter visual weight */
+.volunteer-benefits {
+  padding: 64px 0;
+  background: #fafbfc;
+}
+
+.volunteer-benefits .sec-title-two {
+  margin-bottom: 20px;
+}
+
+.volunteer-benefits .benefits-grid {
+  margin-top: 40px;
+}
+
+.volunteer-benefits .benefit-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  height: 100%;
+  border: 1px solid #e9f1f7;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.volunteer-benefits .benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.12);
+  border-color: #0192dc;
+}
+
+.volunteer-benefits .benefit-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(1, 146, 220, 0.1) 0%, rgba(1, 146, 220, 0.05) 100%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.volunteer-benefits .benefit-icon i {
+  font-size: 28px;
+  color: #0192dc;
+  transition: all 0.3s ease;
+}
+
+.volunteer-benefits .benefit-card:hover .benefit-icon {
+  background: linear-gradient(135deg, #0192dc 0%, #33a8e0 100%);
+  transform: scale(1.1);
+}
+
+.volunteer-benefits .benefit-card:hover .benefit-icon i {
+  color: #ffffff;
+}
+
+.volunteer-benefits .benefit-card h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.volunteer-benefits .benefit-card p {
+  font-size: 0.9375rem;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .volunteer-benefits {
+    padding: 48px 0;
+  }
+}
+
+/* Volunteer Reassurance Section */
+.volunteer-reassurance {
+  padding: 60px 0;
+  background: #f0f8ff;
+}
+
+.volunteer-reassurance .reassurance-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.volunteer-reassurance .reassurance-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: #0192dc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(1, 146, 220, 0.2);
+}
+
+.volunteer-reassurance .reassurance-icon i {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.volunteer-reassurance h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.volunteer-reassurance p {
+  font-size: 1.125rem;
+  color: #4a5568;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .volunteer-reassurance {
+    padding: 40px 20px;
+  }
+  .volunteer-reassurance h3 {
+    font-size: 1.25rem;
+  }
+  .volunteer-reassurance p {
+    font-size: 1rem;
+  }
+}
+
+/* Volunteer Roles Section - Enhanced visual hierarchy */
+.volunteer-roles {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+/* Consistent section spacing (8px grid) */
+.volunteer-benefits,
+.volunteer-roles,
+.volunteer-reassurance,
+.volunteer-form-section {
+  margin-bottom: 0;
+}
+
+.volunteer-roles .sec-title-two {
+  margin-bottom: 20px;
+}
+
+.volunteer-roles .roles-grid {
+  margin-top: 50px;
+}
+
+/* Add vertical gap between rows using Bootstrap gutter */
+.volunteer-roles .roles-grid.g-4 {
+  --bs-gutter-y: 1.5rem;
+}
+
+.volunteer-roles .role-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 20px;
+  text-align: center;
+  height: 100%;
+  border: 2px solid #e9f1f7;
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer-roles .role-card:hover {
+  border-color: #0192dc;
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.15);
+  transform: translateY(-4px);
+}
+
+.volunteer-roles .role-card--other {
+  border-style: dashed;
+  background: #fafcfd;
+}
+
+/* Role Card CTA Button */
+.volunteer-roles .role-cta-btn {
+  display: inline-block;
+  margin-top: auto;
+  padding: 8px 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0192dc;
+  background: #f0f8ff;
+  border: 2px solid #0192dc;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.volunteer-roles .role-card:hover .role-cta-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.volunteer-roles .role-cta-btn:hover {
+  background: #0192dc;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(1, 146, 220, 0.3);
+}
+
+.volunteer-roles .role-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f8ff;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.volunteer-roles .role-icon i {
+  font-size: 28px;
+  color: #0192dc;
+  transition: all 0.3s ease;
+}
+
+.volunteer-roles .role-card:hover .role-icon {
+  background: #0192dc;
+}
+
+.volunteer-roles .role-card:hover .role-icon i {
+  color: #ffffff;
+}
+
+.volunteer-roles .role-card h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.volunteer-roles .role-card p {
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.volunteer-roles .role-type {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-bottom: 12px;
+}
+
+.volunteer-roles .role-type--field {
+  background: rgba(231, 174, 65, 0.12);
+  color: #c9930a;
+}
+
+.volunteer-roles .role-type--remote {
+  background: rgba(1, 146, 220, 0.1);
+  color: #0077b3;
+}
+
+.volunteer-roles .role-type--hybrid {
+  background: rgba(72, 187, 120, 0.1);
+  color: #276749;
+}
+
+.volunteer-roles .role-type--open {
+  background: rgba(159, 122, 234, 0.1);
+  color: #6b46c1;
+}
+
+@media (max-width: 991px) {
+  .volunteer-roles {
+    padding: 60px 0;
+  }
+
+  .volunteer-roles .roles-grid.g-4 {
+    --bs-gutter-y: 1rem;
+  }
+
+  .volunteer-roles .role-card {
+    padding: 18px 16px;
+  }
+
+  .volunteer-roles .role-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 10px;
+  }
+
+  .volunteer-roles .role-icon i {
+    font-size: 24px;
+  }
+
+  .volunteer-roles .role-card h4 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+
+  .volunteer-roles .role-card p {
+    font-size: 0.8125rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .volunteer-roles .roles-grid.g-4 {
+    --bs-gutter-y: 0.75rem;
+  }
+}
+
+/* Volunteer Form Section Enhancement */
+.volunteer-form-section {
+  padding: 80px 0;
+  background: #f8fafb;
+}
+
+.volunteer-form-section .donation-form-samount {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.volunteer-form-section .form-reassurance {
+  text-align: center;
+  margin: 30px auto 40px;
+  max-width: 600px;
+  padding: 16px 20px;
+  background: #fffbeb;
+  border-radius: 12px;
+  border: 1px solid #fcd34d;
+}
+
+.volunteer-form-section .form-reassurance p {
+  margin: 0;
+  color: #92400e;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.volunteer-form-section .form-box {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e9f1f7;
+}
+
+/* Form Section Groups */
+.volunteer-form-section .form-group-section {
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e9f1f7;
+}
+
+.volunteer-form-section .form-group-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.volunteer-form-section .form-section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.volunteer-form-section .form-section-help {
+  font-size: 0.9375rem;
+  color: #718096;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.volunteer-form-section .form-label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 0.9375rem;
+}
+
+.volunteer-form-section h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f4f8;
+}
+
+.volunteer-form-section h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 28px 0 16px;
+}
+
+/* Radio Buttons (Volunteer Fields) */
+.volunteer-form-section .list-inline.selected-amount {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+}
+
+.volunteer-form-section .amount-box {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.volunteer-form-section .amount-box input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  margin: 0;
+}
+
+.volunteer-form-section .amount-box label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 50px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  white-space: nowrap;
+  min-height: 48px;
+}
+
+.volunteer-form-section .amount-box:hover label {
+  border-color: #0192dc;
+  background: #f0f8ff;
+}
+
+.volunteer-form-section .amount-box input[type="radio"]:checked + label {
+  background: linear-gradient(135deg, #0192dc 0%, #0077b3 100%);
+  border-color: #0192dc;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(1, 146, 220, 0.3);
+}
+
+.volunteer-form-section .amount-box input[type="radio"]:focus + label {
+  outline: 3px solid rgba(1, 146, 220, 0.3);
+  outline-offset: 2px;
+}
+
+/* Custom Field Input (اذكر مجال آخر) - New Design */
+.volunteer-form-section .amount-box-custom {
+  flex: 0 0 auto;
+}
+
+.volunteer-form-section .amount-box-custom label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volunteer-form-section .custom-field-wrapper {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.volunteer-form-section .custom-field-wrapper .form-control {
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  padding: 12px 16px;
+  font-size: 0.9375rem;
+  transition: all 0.25s ease;
+}
+
+.volunteer-form-section .custom-field-wrapper .form-control:focus {
+  border-color: #0192dc;
+  box-shadow: 0 0 0 3px rgba(1, 146, 220, 0.1);
+  outline: none;
+}
+
+/* Input Group Styling for Phone and Portfolio */
+.volunteer-form-section .input-group {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #e2e8f0;
+  background: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.volunteer-form-section .input-group:focus-within {
+  border-color: #0192dc;
+  box-shadow: 0 0 0 3px rgba(1, 146, 220, 0.1);
+}
+
+.volunteer-form-section .input-group-text {
+  background: #f8fafb;
+  border: none;
+  color: #4a5568;
+  padding: 0 16px;
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #e2e8f0;
+}
+
+.volunteer-form-section .input-group:focus-within .input-group-text {
+  background: #f0f8ff;
+  color: #0192dc;
+  border-right-color: #0192dc;
+}
+
+.volunteer-form-section .input-group .form-control {
+  border: none;
+  border-radius: 0;
+  padding: 12px 16px;
+  height: 48px;
+  font-size: 0.9375rem;
+}
+
+.volunteer-form-section .input-group .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Select Time / Weekly Availability */
+.volunteer-form-section .list-inline.select-time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+.volunteer-form-section .list-inline.select-time li p {
+  margin: 0;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.volunteer-form-section .payment-time-selection {
+  padding: 10px 40px 10px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 0.9375rem;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  min-width: 180px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234a5568' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 12px center;
+}
+
+.volunteer-form-section .payment-time-selection:hover,
+.volunteer-form-section .payment-time-selection:focus {
+  border-color: #0192dc;
+  outline: none;
+}
+
+/* Form Controls */
+.volunteer-form-section .form-control {
+  border-radius: 8px;
+  border: 2px solid #e2e8f0;
+  padding: 12px 16px;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease;
+  height: auto;
+  min-height: 48px;
+}
+
+.volunteer-form-section .form-control:focus {
+  border-color: #0192dc;
+  box-shadow: 0 0 0 3px rgba(1, 146, 220, 0.1);
+  outline: none;
+}
+
+.volunteer-form-section .form-control::placeholder {
+  color: #a0aec0;
+}
+
+.volunteer-form-section textarea.form-control {
+  min-height: 120px;
+  resize: vertical;
+  padding: 14px 16px;
+  line-height: 1.6;
+}
+
+.volunteer-form-section .form-group:has(textarea) {
+  margin-bottom: 24px;
+}
+
+.volunteer-form-section .form-group {
+  margin-bottom: 20px;
+}
+
+/* Improved spacing for form sections */
+.volunteer-form-section .donation-form-samount {
+  margin-top: 0;
+}
+
+.volunteer-form-section .donation-form-samount h5 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.volunteer-form-section .form-group label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Days Selection Label */
+.volunteer-form-section .form-label-days {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #2d3748;
+  font-size: 1rem;
+}
+
+/* Checkbox Group (Days) - New Design */
+.volunteer-form-section .checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.volunteer-form-section .checkbox-group .form-check {
+  padding: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.25s ease;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  text-align: center;
+}
+
+.volunteer-form-section .checkbox-group .form-check:hover {
+  border-color: #0192dc;
+  background: #f0f8ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(1, 146, 220, 0.1);
+}
+
+.volunteer-form-section .checkbox-group .form-check-input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.volunteer-form-section .checkbox-group .form-check-label {
+  cursor: pointer;
+  font-size: 0.9375rem;
+  color: #4a5568;
+  margin: 0;
+  padding: 16px 20px;
+  font-weight: 500;
+  user-select: none;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.volunteer-form-section .checkbox-group .form-check-input:checked + .form-check-label {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.volunteer-form-section .checkbox-group .form-check:has(.form-check-input:checked) {
+  border-color: #0192dc;
+  background: linear-gradient(135deg, #0192dc 0%, #0077b3 100%);
+  box-shadow: 0 4px 16px rgba(1, 146, 220, 0.25);
+  transform: translateY(-2px);
+}
+
+.volunteer-form-section .checkbox-group .form-check:has(.form-check-input:checked)::after {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 0.875rem;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Consent Checkbox */
+.volunteer-form-section .consent-checkbox {
+  background: #fffbeb;
+  padding: 18px 20px;
+  border-radius: 12px;
+  border: 2px solid #fcd34d;
+  position: relative;
+}
+
+.volunteer-form-section .consent-checkbox .form-check {
+  background: transparent;
+  border: none;
+  padding: 0 0 0 36px;
+  margin: 0;
+}
+
+.volunteer-form-section .consent-checkbox .form-check:hover {
+  background: transparent;
+  transform: none;
+}
+
+.volunteer-form-section .consent-checkbox .form-check-input {
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  accent-color: #f59e0b;
+}
+
+.volunteer-form-section .consent-checkbox .form-check-label {
+  color: #92400e;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.volunteer-form-section .consent-checkbox .form-check-input:checked ~ .form-check-label {
+  color: #92400e;
+  font-weight: 600;
+}
+
+.volunteer-form-section .consent-checkbox .invalid-feedback {
+  margin-top: 10px;
+  padding-right: 0;
+}
+
+/* Validation Feedback */
+.volunteer-form-section .invalid-feedback {
+  display: none;
+  font-size: 0.8125rem;
+  color: #dc2626;
+  margin-top: 6px;
+  padding-right: 4px;
+}
+
+.volunteer-form-section .form-control.is-invalid ~ .invalid-feedback,
+.volunteer-form-section .was-validated .form-control:invalid ~ .invalid-feedback,
+.volunteer-form-section .was-validated .form-control:invalid ~ .invalid-feedback {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.volunteer-form-section .invalid-feedback i {
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.volunteer-form-section .form-control.is-invalid,
+.volunteer-form-section .was-validated .form-control:invalid,
+.volunteer-form-section .payment-time-selection.is-invalid {
+  border-color: #dc2626;
+  background-image: none;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.volunteer-form-section .form-control.is-valid,
+.volunteer-form-section .was-validated .form-control:valid {
+  border-color: #10b981;
+  background-image: none;
+}
+
+.volunteer-form-section .form-control.is-invalid ~ .invalid-feedback,
+.volunteer-form-section .was-validated .form-control:invalid ~ .invalid-feedback {
+  display: flex;
+}
+
+.volunteer-form-section .form-text {
+  font-size: 0.8125rem;
+  color: #718096;
+  margin-top: 8px;
+  display: block;
+  padding-right: 4px;
+}
+
+.volunteer-form-section .form-text.text-muted {
+  text-align: center;
+}
+
+/* Required Indicator */
+.volunteer-form-section .required {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* Trust Line */
+.volunteer-form-section .form-trust-line {
+  text-align: center;
+  margin: 32px 0 24px;
+  padding: 16px;
+  background: #f0f8ff;
+  border-radius: 8px;
+}
+
+.volunteer-form-section .form-trust-line p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.9375rem;
+}
+
+/* Submit Button */
+.volunteer-form-section .btn-style-two {
+  padding: 16px 48px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  border-radius: 50px;
+  min-width: 220px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(1, 146, 220, 0.25);
+  border: none;
+}
+
+.volunteer-form-section .btn-style-two:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(1, 146, 220, 0.35);
+}
+
+.volunteer-form-section .btn-style-two:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.volunteer-form-section .form-group.text-center {
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+/* Success Message */
+.volunteer-form-section .form-success-message {
+  margin-top: 24px;
+  padding: 24px;
+  background: #d1fae5;
+  border-radius: 12px;
+  border: 2px solid #10b981;
+  text-align: center;
+}
+
+.volunteer-form-section .form-success-message i {
+  font-size: 2rem;
+  color: #10b981;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.volunteer-form-section .form-success-message h4 {
+  color: #065f46;
+  font-weight: 700;
+  margin-bottom: 8px;
+  border: none;
+  padding: 0;
+}
+
+.volunteer-form-section .form-success-message p {
+  color: #047857;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Secondary CTA */
+.volunteer-form-section .form-secondary-cta {
+  text-align: center;
+  margin-top: 40px;
+  padding: 24px;
+  background: #f8fafb;
+  border-radius: 12px;
+}
+
+.volunteer-form-section .form-secondary-cta p {
+  margin: 0 0 16px;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .volunteer-form-section {
+    padding: 60px 0;
+  }
+}
+
+/* Section spacing improvements */
+.volunteer-form-section .sec-title-two {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .volunteer-form-section .donation-form-samount {
+    padding: 24px 20px;
+  }
+
+  .volunteer-form-section .form-box {
+    padding: 24px 20px;
+  }
+
+  .volunteer-form-section .form-group-section {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+
+  .volunteer-form-section .form-section-title {
+    font-size: 1.125rem;
+  }
+
+  .volunteer-form-section .donation-form-samount {
+    padding: 0;
+  }
+
+  .volunteer-form-section .checkbox-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .volunteer-form-section .checkbox-group .form-check-label {
+    padding: 12px 16px;
+    font-size: 0.875rem;
+  }
+
+  .volunteer-form-section .amount-box label {
+    padding: 10px 16px;
+    font-size: 0.875rem;
+  }
+
+  .volunteer-form-section .list-inline.selected-amount {
+    flex-direction: column;
+  }
+
+  .volunteer-form-section .amount-box {
+    width: 100%;
+  }
+
+  .volunteer-form-section .amount-box label {
+    width: 100%;
+  }
+
+  .volunteer-form-section .ulockd-mrgn950 {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .volunteer-form-section .list-inline.select-time {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .volunteer-form-section .payment-time-selection {
+    width: 100%;
+  }
+
+  .volunteer-form-section .checkbox-group {
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .volunteer-form-section .form-check {
+    width: calc(50% - 4px);
+    padding: 8px 32px 8px 14px;
+    font-size: 0.875rem;
+  }
+
+  .volunteer-form-section .form-check-label {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .volunteer-form-section .form-check {
+    width: 100%;
+  }
+}
+
+
+/* Volunteer Role Cards - Clickable Cards (entire card is clickable, no CTA button) */
+.volunteer-roles .role-card.clickable-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.volunteer-roles .role-card.clickable-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #0192dc;
+}
+
+.volunteer-roles .role-card.clickable-card .role-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.volunteer-roles .role-card.clickable-card .role-icon i {
+  font-size: 2rem;
+  color: #0192dc;
+  transition: all 0.3s ease;
+}
+
+.volunteer-roles .role-card.clickable-card:hover .role-icon {
+  background: #0192dc;
+  transform: scale(1.1);
+}
+
+.volunteer-roles .role-card.clickable-card:hover .role-icon i {
+  color: #ffffff;
+}
+
+.volunteer-roles .role-card.clickable-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+  transition: color 0.2s ease;
+}
+
+.volunteer-roles .role-card.clickable-card:hover h4 {
+  color: #0192dc;
+}
+
+.volunteer-roles .role-card.clickable-card p {
+  color: #64748b;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.volunteer-roles .role-card.clickable-card .role-type {
+  margin-top: auto;
+  font-size: 0.875rem;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: #f1f5f9;
+  color: #64748b;
+  font-weight: 500;
+}
+
+
+r-page .why-volunteer .benefit-card {
+  height: 100%;
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.volunteer-page .why-volunteer .benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.volunteer-page .why-volunteer .benefit-card .icon-box {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  border-radius: 9999px;
+  transition: all 250ms ease-in-out;
+}
+
+.volunteer-page .why-volunteer .benefit-card .icon-box .icon {
+  font-size: 30px;
+  color: #0192dc;
+}
+
+.volunteer-page .why-volunteer .benefit-card:hover .icon-box {
+  background: #0192dc;
+  transform: scale(1.1);
+}
+
+.volunteer-page .why-volunteer .benefit-card:hover .icon-box .icon {
+  color: #ffffff;
+}
+
+.volunteer-page .volunteer-opportunities {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+@media (max-width: 991px) {
+  .volunteer-page .volunteer-opportunities {
+    padding: 48px 0;
+  }
+}
+
+.volunteer-page .volunteer-opportunities .opportunity-card .badges {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.volunteer-page .volunteer-opportunities .opportunity-card .badges .badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.volunteer-page .volunteer-opportunities .opportunity-card .badges .badge:first-child {
+  background: #f8f9fa;
+  color: #0192dc;
+}
+
+.volunteer-page .volunteer-opportunities .opportunity-card .badges .badge:last-child {
+  background: rgba(231, 174, 65, 0.1);
+  color: #e7ae41;
+}
+
+.volunteer-page .volunteer-form-section {
+  padding: 80px 0;
+}
+
+@media (max-width: 991px) {
+  .volunteer-page .volunteer-form-section {
+    padding: 48px 0;
+  }
+}
+
+.volunteer-page .volunteer-form-section .form-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 767px) {
+  .volunteer-page .volunteer-form-section .form-container {
+    padding: 24px;
+  }
+}
+
+.volunteer-page .volunteer-form-section .form-container .form-section-title {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.volunteer-page .volunteer-form-section .form-container .form-section-title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #343434;
+}
+
+/* ============================================
+    Page Styles
+   ============================================ */
+
+/*  Hero Enhancement */
+.volunteer-hero .page-hero__content h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.volunteer-hero .page-hero__content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  opacity: 0.95;
+}
+
+.volunteer-hero .hero__cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.volunteer-hero .hero__cta .theme-btn {
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.volunteer-hero .hero__cta .theme-btn i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 767px) {
+  .volunteer-hero .page-hero__content h1 {
+    font-size: 1.875rem;
+  }
+  .volunteer-hero .page-hero__content p {
+    font-size: 1rem;
+  }
+  .volunteer-hero .hero__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  .volunteer-hero .hero__cta .theme-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+

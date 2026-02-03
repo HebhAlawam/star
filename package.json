@@ -19,15 +19,20 @@
     "jquery": "^3.7.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
     "@vitejs/plugin-legacy": "^7.2.1",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
-    "postcss": "^8.4.32",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "prettier": "^3.1.1",
+    "purgecss": "^8.0.0",
+    "purify-css": "^1.2.5",
     "sass": "^1.69.5",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "vite-plugin-purgecss": "^0.2.13"
   },
   "optionalDependencies": {
     "countdown": "^2.6.0",

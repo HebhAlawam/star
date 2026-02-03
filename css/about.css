@@ -1,0 +1,694 @@
+
+
+/* Consistent Section Spacing */
+.about-page-mission-vision,
+.about-page-what-we-do,
+.about-page-how-we-work,
+.about-page-team,
+.about-page-final-cta {
+  padding: 60px 0;
+}
+
+/* Section Backgrounds - Alternate for visual rhythm */
+.about-page-mission-vision {
+  background: #ffffff;
+}
+
+.about-page-what-we-do {
+  background: #f8fafb;
+}
+
+.about-page-how-we-work {
+  background: #ffffff;
+}
+
+.about-page-team {
+  background: #f8fafb;
+}
+
+/* Mission & Vision Cards */
+.about-mission-card,
+.about-vision-card {
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.about-mission-card .inner-box,
+.about-vision-card .inner-box {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 16px;
+  padding: 36px 32px;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.about-mission-card:hover .inner-box,
+.about-vision-card:hover .inner-box {
+  border-color: #0192dc;
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.18);
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.about-mission-card h3,
+.about-vision-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-mission-card h3 i,
+.about-vision-card h3 i {
+  font-size: 1.75rem;
+  color: #0192dc;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f8ff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.about-mission-card:hover h3 i,
+.about-vision-card:hover h3 i {
+  background: #0192dc;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.about-mission-card .text,
+.about-vision-card .text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+/* Service Cards */
+.about-service-card {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.about-service-card .inner-box {
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 16px;
+  padding: 32px 28px;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+}
+
+.about-service-card:hover .inner-box {
+  border-color: #0192dc;
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.18);
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.about-service-card:focus-within .inner-box {
+  outline: 2px solid #0192dc;
+  outline-offset: 4px;
+}
+
+.about-service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-service-card h3 i {
+  font-size: 1.5rem;
+  color: #0192dc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f8ff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.about-service-card:hover h3 i {
+  background: #0192dc;
+  color: #ffffff;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.about-service-card .text {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Process Steps - Tilted Cards */
+.about-process-steps .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.about-process-step {
+  padding: 28px 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(-2deg);
+  margin: 0 8px;
+}
+
+.about-process-step:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.about-process-step:hover {
+  transform: rotate(0deg) translateY(-6px) scale(1.02);
+  z-index: 10;
+}
+
+.about-process-step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #0192dc 0%, #0077b3 100%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.about-process-step:hover {
+  border-color: #0192dc;
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.18);
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.about-process-step:hover::before {
+  opacity: 1;
+  width: 6px;
+}
+
+.step-number {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #0192dc 0%, #0077b3 100%);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 16px rgba(1, 146, 220, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.about-process-step:hover .step-number {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 6px 24px rgba(1, 146, 220, 0.4);
+}
+
+.about-process-step h4 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Team Section */
+.about-page-team {
+  background: #f8fafb;
+}
+
+.about-team-group-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 30px;
+}
+
+.about-team-group-title i {
+  color: #0192dc;
+  margin-left: 10px;
+}
+
+/* Shelter Team Member Cards - Simple: Photo + Name + Role */
+.about-shelter-member-card {
+  padding: 24px 20px;
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 16px;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-shelter-member-card:hover {
+  border-color: #0192dc;
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.18);
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.shelter-member-photo {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.shelter-member-photo .member-img,
+.shelter-member-photo .member-img-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0192dc;
+  transition: all 0.3s ease;
+  display: block;
+  background: #f0f8ff;
+  margin: 0 auto;
+}
+
+.shelter-member-photo .member-img-placeholder {
+  border: 4px solid #0192dc;
+  box-shadow: 0 4px 12px rgba(1, 146, 220, 0.2);
+}
+
+.about-shelter-member-card:hover .member-img,
+.about-shelter-member-card:hover .member-img-placeholder {
+  border-color: #0077b3;
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(1, 146, 220, 0.3);
+}
+
+.shelter-member-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.about-shelter-member-card:hover .shelter-member-name {
+  color: #0192dc;
+}
+
+.shelter-member-role {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Management Team Member Cards */
+.about-team-member-card {
+  padding: 40px 28px;
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-team-member-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0192dc 0%, #0077b3 100%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.about-team-member-card:hover {
+  border-color: #0192dc;
+  box-shadow: 0 16px 40px rgba(1, 146, 220, 0.2);
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.about-team-member-card:hover::before {
+  opacity: 1;
+  height: 6px;
+}
+
+.about-team-member-card:focus-within {
+  outline: 2px solid #0192dc;
+  outline-offset: 4px;
+}
+
+.team-member-avatar {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.avatar-circle {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e3f2fd 100%);
+  border: 4px solid #0192dc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #0192dc;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  box-shadow: 0 8px 24px rgba(1, 146, 220, 0.15);
+}
+
+.avatar-circle::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0192dc, #0077b3, #0192dc);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.about-team-member-card:hover .avatar-circle {
+  background: linear-gradient(135deg, #0192dc 0%, #0077b3 100%);
+  color: #ffffff;
+  transform: scale(1.08) rotate(5deg);
+  border-color: #0077b3;
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.35);
+}
+
+.about-team-member-card:hover .avatar-circle::before {
+  opacity: 0.3;
+  inset: -8px;
+}
+
+.team-member-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.about-team-member-card:hover .team-member-name {
+  color: #0192dc;
+}
+
+.team-member-role {
+  font-size: 0.9375rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Volunteers Block */
+.about-volunteers-block {
+  padding: 48px 40px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafb 100%);
+  border: 2px solid #e9ecef;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.about-volunteers-block:hover {
+  border-color: #0192dc;
+  box-shadow: 0 12px 32px rgba(1, 146, 220, 0.15);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 100%);
+}
+
+.avatar-circle-small {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e3f2fd 100%);
+  border: 3px solid #0192dc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: #0192dc;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(1, 146, 220, 0.15);
+}
+
+.volunteer-icon-placeholder:hover .avatar-circle-small {
+  background: linear-gradient(135deg, #0192dc 0%, #0077b3 100%);
+  color: #ffffff;
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 6px 20px rgba(1, 146, 220, 0.35);
+  border-color: #0077b3;
+}
+
+/* Final CTA */
+.about-page-final-cta .theme-btn {
+  transition: all 0.3s ease;
+}
+
+.about-page-final-cta .theme-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.about-page-final-cta .theme-btn:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Section Title Improvements */
+.sec-title-two h2 {
+  margin-bottom: 16px;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #2d3748;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 16px;
+}
+
+.sec-title-two h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #0192dc 0%, #0077b3 100%);
+  border-radius: 2px;
+}
+
+.sec-title-two .text {
+  font-size: 1.0625rem;
+  color: #64748b;
+  margin-top: 12px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Team Group Title */
+.about-team-group-title {
+  text-align: center;
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  position: relative;
+}
+
+.about-team-group-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #0192dc 0%, #0077b3 100%);
+  border-radius: 2px;
+}
+
+.about-team-group-title i {
+  color: #0192dc;
+  font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .about-page-mission-vision,
+  .about-page-what-we-do,
+  .about-page-how-we-work,
+  .about-page-team,
+  .about-page-final-cta {
+    padding: 48px 0;
+  }
+
+  .about-page-final-cta {
+    padding: 60px 0 !important;
+  }
+
+  .sec-title-two h2 {
+    font-size: 2rem;
+  }
+
+  .avatar-circle {
+    width: 120px;
+    height: 120px;
+    font-size: 2.5rem;
+  }
+
+  .step-number {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+  }
+
+  .about-mission-card .inner-box,
+  .about-vision-card .inner-box {
+    padding: 32px 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-page-mission-vision,
+  .about-page-what-we-do,
+  .about-page-how-we-work,
+  .about-page-team,
+  .about-page-final-cta {
+    padding: 40px 0;
+  }
+
+  .sec-title-two h2 {
+    font-size: 1.75rem;
+    padding-bottom: 12px;
+  }
+
+  .sec-title-two h2::after {
+    width: 50px;
+    height: 3px;
+  }
+
+  .about-process-step {
+    margin-bottom: 20px;
+    padding: 24px 20px;
+    transform: rotate(-1deg);
+    margin: 0 4px 20px;
+  }
+
+  .about-process-step:nth-child(even) {
+    transform: rotate(1deg);
+  }
+
+  .about-process-step:hover {
+    transform: rotate(0deg) translateY(-6px) scale(1.02);
+  }
+
+  .step-number {
+    width: 52px;
+    height: 52px;
+    font-size: 1.375rem;
+    margin-bottom: 16px;
+  }
+
+  .avatar-circle {
+    width: 100px;
+    height: 100px;
+    font-size: 2.25rem;
+  }
+
+  .shelter-member-photo .member-img,
+  .shelter-member-photo .member-img-placeholder {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+  }
+
+  .team-member-name {
+    font-size: 1.125rem;
+  }
+
+  .team-member-role {
+    font-size: 0.875rem;
+  }
+
+  .about-team-member-card {
+    padding: 32px 24px;
+  }
+
+  .about-volunteers-block {
+    padding: 36px 28px;
+  }
+
+  .avatar-circle-small {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+  }
+
+  .about-team-group-title {
+    font-size: 1.375rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about-mission-card h3,
+  .about-vision-card h3 {
+    font-size: 1.375rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .about-service-card h3 {
+    font-size: 1.125rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+

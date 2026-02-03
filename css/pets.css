@@ -1,0 +1,126 @@
+
+
+
+
+
+/* تنسيق كرت الحيوان */
+.animal-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.animal-card:hover {
+    transform: translateY(-10px);
+}
+
+/* أوسمة الحالة (Badges) */
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+}
+
+.status-badge.adopt { background-color: #28a745; } /* أخضر للتبني */
+.status-badge.sponsor { background-color: #ff9800; } /* برتقالي للكفالة */
+.status-badge.sponsored { background-color: #0192dc; } /* أزرق للمكفول */
+
+/* بيانات الحيوان */
+.animal-info-block .animal-name {
+    font-size: 20px;
+    color: #0192dc; /* لون الهوية */
+    margin-bottom: 5px;
+}
+
+.animal-meta {
+    font-size: 14px;
+    color: #777;
+}
+
+.animal-meta i {
+    margin-left: 5px;
+    color: #ff9800;
+}
+
+/* الحفاظ على حجم الكرت مع تحسين الظلال والحواف */
+.animal-card {
+    background: #ffffff;
+    border: 1px solid #f1f1f1; /* لمسة رقيقة لتحديد الكرت */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* ظل ناعم مشابه لكروت الأخبار */
+    transition: all 0.3s ease;
+}
+
+.animal-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* تنسيق الوسام (Status Badge) */
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 10;
+}
+
+/* ألوان مستوحاة من تناسق كروت الأخبار */
+.status-badge.adopt { background-color: #4db7a3; } /* لون STAR المميز للأخبار */
+.status-badge.sponsor { background-color: #ff9800; }
+
+/* تنسيق أيقونة الرابط الجديدة */
+.link-btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: #ff9800; /* لون التفاعل البرتقالي */
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.link-btn-icon:hover {
+    background: #0192dc;
+    transform: scale(1.1);
+}
+
+/* تحسين عرض النصوص */
+.animal-name {
+    font-size: 19px;
+    font-weight: 800;
+    color: #0192dc; /* اللون الأزرق الرسمي */
+    margin-bottom: 8px !important;
+}
+
+.animal-meta {
+    font-size: 13px;
+    color: #888;
+    font-weight: 500;
+}
+
+.animal-meta i {
+    color: #ff9800; /* أيقونات برتقالية للتناسق البصري */
+    margin-left: 4px;
+}
+
+.animal-meta .sep {
+    color: #eee;
+    margin: 0 8px;
+}

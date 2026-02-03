@@ -4,153 +4,93 @@
 <head>
     <meta charset="utf-8">
     <title>  نجوم ستار </title>
+    
     <!-- Stylesheets -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Revolution Slider removed in Phase 3 - not used -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/donation.css" rel="stylesheet">
+
     <link href="css/responsive.css" rel="stylesheet">
-    <!--Color Switcher Mockup-->
     <link href="css/color-switcher-design.css" rel="stylesheet">
-    <!--Color Themes-->
     <link id="theme-color-file" rel="stylesheet" href="css/color-themes/blue-theme.css">
-    <!--Favicon-->
-    <link rel="shortcut icon" href="images/favicon_1.png" type="image/x-icon">
-    <link rel="icon" href="images/favicon.png_1" type="image/x-icon">
-    <!-- Responsive -->
+    <link rel="icon" href="images/favicon_1.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-
-
-    <!-- Font Awesome 6 (فقط) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<!-- توافق أسماء v4 القديمة: -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/v4-shims.min.css"> -->
-
-<meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 
 <body>
-    <div class="page-wrapper">
+    <div class="page-wrapper volunteer-page">
         <!-- Preloader -->
-        <div class="pet">
-          <div id="preloading"></div>
-        </div>
-
-
-
-
-        <!-- Main Header / Header Style Two-->
+        <div class="preloader"></div>
+        
+        <!-- Main Header -->
         <header class="main-header header-style-two">
-
-          <div class="header-top">
-            <div class="auto-container">
-              <div class="top-inner">
-                <div class="clearfix">
-                  <div class="top-left mt-2">
-                    <ul class="clearfix mb-0">
-                      <li><span class="icon flaticon-map-marker"></span> سوريا، دمشق</li>
-                      <li>
-                        <a href="tel:+963959869575">
-                          <span class="icon flaticon-telephone-handle-silhouette"></span>
-                          <bdi class="latnum" dir="ltr" lang="en">+963 959 869 575</bdi>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="mailto:support@star.com">
-                          <span class="icon fas fa-envelope"></span>
-                          support@star.com
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="top-right clearfix p-2">
-                
-
-                    <!--social-icon-->
-                    <div class="social-icon">
-                      <ul class="clearfix">
-                        <li><a href="#"><span class="fab fa-square-facebook" aria-hidden="true"></span><span class="sr-only">Facebook</span></a></li>
-                        <li><a href="#"><span class="fab fa-whatsapp" aria-hidden="true"></span><span class="sr-only">WhatsApp</span></a></li>
-                        <li><a href="#"><span class="fab fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span></a></li>
-
-
-
-                        <!-- <li><a href="#"> تابعنا:</a></li> -->
-                      </ul>
+            <div class="header-top">
+                <div class="auto-container">
+                    <div class="top-inner">
+                        <div class="clearfix">
+                            <div class="top-left mt-2">
+                                <ul class="clearfix mb-0">
+                                    <li><span class="icon flaticon-map-marker"></span> سوريا، دمشق</li>
+                                    <li>
+                                        <a href="tel:+963959869575">
+                                            <span class="icon flaticon-telephone-handle-silhouette"></span>
+                                            <bdi class="latnum" dir="ltr" lang="en">+963 959 869 575</bdi>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:support@star.com">
+                                            <span class="icon fas fa-envelope"></span>
+                                            support@star.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="top-right clearfix p-2">
+                                <div class="social-icon">
+                                    <ul class="clearfix">
+                                        <li><a href="https://www.facebook.com/share/17kxVQLSAN/"><span class="fab fa-square-facebook" aria-hidden="true"></span><span class="sr-only">Facebook</span></a></li>
+                                        <li><a href="https://wa.me/963959869575?text=مرحباً "
+                                             ><span class="fab fa-whatsapp" aria-hidden="true"></span><span class="sr-only">WhatsApp</span></a></li>
+                                        <li><a href="https://www.instagram.com/star4animal?igsh=cWt6ZXUxeWl0aWt2"><span class="fab fa-instagram" aria-hidden="true"></span><span class="sr-only">Instagram</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="emergency-cta" style="display:inline-flex; gap:8px; align-items:center; margin-inline-end:12px;">
+                                    <a href="https://wa.me/963959869575?text=مرحباً، أريد الإبلاغ عن حالة إسعافية"
+                                        class="theme-btn btn-style-one"
+                                        target="_blank" rel="noopener"
+                                        aria-label="حالة إسعافية؟ تواصل عبر واتساب">
+                                        <span class="fas fa-ambulance" aria-hidden="true"></span>
+                                        حالة إسعافية؟ 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-            <!-- زر طوارئ واتساب + أبلغ حالة -->
-                    <div class="emergency-cta" style="display:inline-flex; gap:8px; align-items:center; margin-inline-end:12px;">
-                      <a href="https://wa.me/963959869575?text=%D8%AD%D8%A7%D9%84%D8%A9%20%D8%A5%D8%B3%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20-%20"
-                        class="theme-btn btn-style-one"
-                        target="_blank" rel="noopener"
-                        aria-label="حالة إسعافية؟ تواصل عبر واتساب">
-                        <span class="fas fa-ambulance" aria-hidden="true"></span>
-                        حالة إسعافية؟ 
-                      </a>
-                    
-                    </div>
-
-                  </div>
-
                 </div>
-              </div>
             </div>
-            
-          </div>
-
 
             <!--Header-Upper-->
             <div class="container">
                 <div class="header-upper">
                     <div class="clearfix">
                         <div class="pull-right logo-outer">
-                            <div class="logo"><a href="index.html"><img src="images/logo-2.png" width="200" alt="" title=""></a>
-                            </div>
+                            <div class="logo"><a href="/"><img src="images/logo-2.png" width="200" alt="STAR Logo" title="STAR"></a></div>
                         </div>
-                        <!-- Main Menu End-->
-                         <div class="outer-box">
+                        <div class="outer-box">
                             <div class="btn-box">
-                                <a href="donation.html" class="theme-btn btn-style-two">
-                                    <!-- <span class="icon fas fa-phone-square"></span> -->
-                                    تبرع الآن</a>
+                                <a href="donation.html" class="theme-btn btn-style-two">تبرع الآن</a>
                             </div>
                             <div class="social-links-box">
-                                <ul class="social-icon-three">
-                                   
-                                </ul>
+                                <ul class="social-icon-three"></ul>
                             </div>
-                        </div> 
+                        </div>
                         <div class="pull-left upper-right clearfix">
                             <div class="nav-outer clearfix">
                                 <!-- Main Menu -->
-                                <!-- Main Menu End-->
-                                <div class="outer-box">
-                                    <!--Search Box-->
-                                    <div class="search-box-outer">
-                                        <div class="dropdown">
-                                            <button class="search-box-btn" id="dropdownMenu3" data-bs-toggle="dropdown">
-                                                <span class="fa-solid fa-magnifying-glass"></span>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right search-panel menu-search"
-                                                aria-labelledby="dropdownMenu3">
-                                                <li class="panel-outer">
-                                                    <div class="form-container">
-                                                        <form method="post" action="news.html">
-                                                            <div class="form-group">
-                                                                <input type="search" name="field-name" value=""
-                                                                    placeholder="ابحث هنا" required>
-                                                                <button type="submit" class="search-btn"><span
-                                                                        class="fa-solid fa-magnifying-glass"></span></button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                             
                                 <nav class="main-menu menu-4 navbar navbar-expand-md">
                                     <div class="navbar-header">
                                         <!-- Toggle Button -->
@@ -160,15 +100,15 @@
                                     </div>
                                     <div class="navbar-collapse collapse clearfix">
                                         <ul class="navigation clearfix">
-                                            <li class=" "><a href="index.html"> الرئيسية </a>
+                                            <li class=""><a href="/"> الرئيسية </a>
                                             </li>
                                             <li class=""><a href="about.html">من نحن</a>
  
                                             </li>
 
-                                            <li class="dropdown"><a href="3">التبني</a>
-                                                <ul>
-                                                    <li class="current"><a href="pets.html">قطط</a>
+                                            <li class="current"><a href="pets.html">التبني</a>
+                                                <!-- <ul>
+                                                    <li class=""><a href="pets.html">قطط</a>
                                                     
                                                     </li>
                                                     <li class=""><a href="pets.html"> كلاب</a>
@@ -178,14 +118,15 @@
 
                                                     </li>
                                                    
-                                                </ul>
+                                                </ul> -->
                                             </li>
 
                                             <li class="">
-                                                <a href="donation.html"> التبرّع </a>
+                                                <a  href="donation.html"> التبرّع </a>
                                             </li>
 
                                             <li class=""><a href="news.html">الأخبار</a> </li>
+                                            <li class=""><a href="volunteer.html">التطوّع</a></li>
                                             <li class=""><a href="contact.html">التواصل</a> </li>
                                         </ul>
                                     </div>
@@ -194,135 +135,103 @@
                         </div>
                     </div>
                 </div>
-            
-              </div>
-            <!--End Header Upper-->
+            </div>
+
             <!--Sticky Header-->
             <div class="sticky-header">
-              <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo pull-right">
-                  <a href="index.html" class="img-responsive">
-                    <img src="images/logo-small.png" width="200" alt="" title="">
-                  </a>
-                </div>
-
-                <!--Right Col-->
-                <div class="right-col pull-left">
-                  <!-- نفس العناصر المختصرة من الهيدر الأساسي -->
-                  <div class="outer-box">
-                    <div class="btn-box">
-                      <a href="donation.html" class="theme-btn btn-style-two">تبرع الآن</a>
+                <div class="auto-container clearfix">
+                    <div class="logo pull-right">
+                        <a href="/" class="img-responsive">
+                            <img src="images/logo-small.png" width="200" alt="STAR Logo" title="STAR">
+                        </a>
                     </div>
-                    <div class="social-links-box">
-                      <ul class="social-icon-three">
-                        <!-- اتركها فارغة أو أضف أيقوناتك هنا -->
-                      </ul>
-                    </div>
-                    <!--Search Box-->
-                    <div class="search-box-outer">
-                      <div class="dropdown">
-                        <button class="search-box-btn" id="stickyDropdownSearch" data-bs-toggle="dropdown">
-                          <span class="fa-solid fa-magnifying-glass"></span>
-                        </button>
-                        <ul class="dropdown-menu pull-right search-panel menu-search" aria-labelledby="stickyDropdownSearch">
-                          <li class="panel-outer">
-                            <div class="form-container">
-                              <form method="post" action="news.html">
-                                <div class="form-group">
-                                  <input type="search" name="field-name" value="" placeholder="ابحث هنا" required>
-                                  <button type="submit" class="search-btn"><span class="fa-solid fa-magnifying-glass"></span></button>
-                                </div>
-                              </form>
+                    <div class="right-col pull-left">
+                        <div class="outer-box">
+                            <div class="btn-box">
+                                <a href="donation.html" class="theme-btn btn-style-two">تبرع الآن</a>
                             </div>
-                          </li>
-                        </ul>
-                      </div>
+                            <div class="social-links-box">
+                                <ul class="social-icon-three"></ul>
+                            </div>
+
+                        </div>
+                        <!-- Main Menu (القائمة المبسطة فقط) -->
+                        <nav class="main-menu menu-4 navbar navbar-expand-md">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                                    <span><i class="fa-solid fa-bars"></i></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class=""><a href="/">الرئيسية</a></li>
+
+                                    <li class=""><a href="about.html">من نحن</a></li>
+
+                                    <li class="current"><a href="pets.html">التبني</a>
+                                     
+                                    </li>
+
+                                    <li class="">
+                                        <a href="donation.html">التبرّع</a>
+                                    </li>
+
+                                    <li class=""><a href="news.html">الأخبار</a> </li>
+                                    <li class=""><a href="volunteer.html">التطوّع</a></li>
+                                    <li class=""><a href="contact.html">التواصل</a> </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
                     </div>
-                  </div>
-
-                  <!-- Main Menu (القائمة المبسطة فقط) -->
-                  <nav class="main-menu menu-4 navbar navbar-expand-md">
-                    <div class="navbar-header">
-                      <!-- Toggle Button -->
-                      <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-                        <span><i class="fa-solid fa-bars"></i></span>
-                      </button>
-                    </div>
-                    <div class="navbar-collapse collapse clearfix">
-                      <ul class="navigation clearfix">
-                        <li class="current "><a href="index.html">الرئيسية</a></li>
-
-                        <li class=""><a href="about.html">من نحن</a></li>
-
-                        <li class="current"><a href="pets.html">التبني</a>
-                         
-                        </li>
-
-                        <li class="">
-                          <a href="donation.html">التبرّع</a>
-                        </li>
-
-                        <li class=""><a href="news.html">الأخبار</a></li>
-
-                        <li class=""><a href="contact.html">التواصل</a></li>
-                      </ul>
-                    </div>
-                  </nav>
-                  <!-- Main Menu End-->
                 </div>
-              </div>
             </div>
-            <!--End Sticky Header-->
-
         </header>
+
+
         <!--End Main Header -->
 
 
 
         <!-- page hero-->
-        <section class="hero-plain page-hero" dir="rtl" aria-label="STAR Hero">
-          <div class="page-hero__media">
-            <!-- اختر واحدة فقط: VIDEO أو IMAGE -->
-
-            <!-- IMAGE -->
-            <img class="hero-plain__img" src="images/hero.jpg"
-                alt="فريق STAR أثناء إنقاذ وتقديم الرعاية لحيوانات شوارع في سوريا" loading="eager" fetchpriority="high">
-
-            <div class="hero-plain__overlay page-hero" aria-hidden="true"></div>
-
-            <div class="page-hero__content ">
-              <h1> نجوم ستار </h1>
-              
-              <p> مشاهد حقيقية من الإنقاذ، الرعاية، والتبنّي مع فريق ستار</p>
-              <!-- <div class="hero__cta">
-                <a href="/donate" class="theme-btn btn-style-three" aria-label="تبرّع الآن">تبرّع الآن</a>
-                <a href="/adopt"  class="theme-btn btn-style-four"  aria-label="ابحث عن صديق للتبنّي">ابحث عن صديق للتبنّي</a>
-
-                  <a href="https://wa.me/963959869575?text=%D8%AD%D8%A7%D9%84%D8%A9%20%D8%A5%D8%B3%D8%B9%D8%A7%D9%81%D9%8A%D8%A9%20-%20"
-                    class="theme-btn btn-style-five"
-                    target="_blank" rel="noopener"
-                    aria-label="حالة إسعافية؟ تواصل عبر واتساب">
-                    <span class="fas fa-ambulance" aria-hidden="true"></span>
-                    حالة إسعافية؟ 
-                  </a>
-              </div> -->
+        <section class="inner-hero" style="--hero-bg: url('images/default-hero.jpg');" dir="rtl" aria-label=" التبرع للستار">
+            <div class="inner-hero__overlay" aria-hidden="true"></div>
+            <div class="auto-container">
+                <div class="inner-hero__content">
+                    <div class="inner-hero__content-wrapper">
+                        <!-- Eyebrow text -->
+                        
+                        <!-- Main title -->
+                        <h1 class="inner-hero__title">   نجوم ستار  </h1>
+                        
+                        <!-- Short description -->
+                        <p class="inner-hero__description">
+                         مشاهد حقيقية من الإنقاذ، الرعاية، والتبنّي مع فريق ستار 
+                        </p>
+                        
+                        <!-- Single primary CTA button -->
+                        <div class="inner-hero__cta">
+                            <a href="donation.html" class="theme-btn btn-style-two" >
+                                تبرع الآن
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </section>
 
 
-
-<!-- Gallery-->
+<!-- Gallery -->
 <section class="gallery-section">
   <div class="auto-container">
     <!--Sec Title Two-->
     <div class="sec-title-two centered">
-       <!-- <div class="title-icon">
+       <div class="title-icon">
                         <img src="images/icons/title-icon-star.png" alt="">
                     </div>
       <h2>  نجوم ستار </h2>
-      <div class="text">  مشاهد حقيقية من الإنقاذ، الرعاية، والتبنّي مع فريق STAR </div> -->
+      <div class="text">  مشاهد حقيقية من الإنقاذ، الرعاية، والتبنّي مع فريق STAR </div>
     </div>
 
     <!-- Masonry Filter -->
@@ -337,7 +246,8 @@
     <div id="grid" class="masonry-gallery grid-four-item clearfix">
 
       <!--Gallery Item (cat)-->
-      <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item cat">
+      <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item cat">
+
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/1.jpg" alt="">
@@ -356,7 +266,8 @@
       </div>
 
       <!--Gallery Item (dog)-->
-      <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item dog">
+        <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item dog">
+
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/2.jpg" alt="">
@@ -374,7 +285,8 @@
       </div>
 
       <!--Gallery Item (other)-->
-      <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item other">
+        <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item other">
+
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/3.jpg" alt="">
@@ -392,7 +304,7 @@
       </div>
 
       <!--Gallery Item (cat + dog)-->
-      <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item cat dog">
+        <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item other">
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/4.jpg" alt="">
@@ -410,7 +322,7 @@
       </div>
 
       <!--Gallery Item (other)-->
-      <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item other">
+        <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item cat">
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/5.jpg" alt="">
@@ -428,7 +340,7 @@
       </div>
 
       <!--Gallery Item (dog)-->
-      <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item dog">
+        <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item dog">
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/6.jpg" alt="">
@@ -444,7 +356,7 @@
           </figure>
         </div>
       </div>
-            <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item dog">
+        <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item cat">
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/6.jpg" alt="">
@@ -460,7 +372,7 @@
           </figure>
         </div>
       </div>
-            <div class="gallery-item col-md-4 col-sm-6 col-xs-12 isotope-item dog">
+        <div class="gallery-item col-md-4 col-sm-6 col-12 isotope-item dog">
         <div class="inner-box">
           <figure class="image-box">
             <img src="images/gallery/6.jpg" alt="">
@@ -482,8 +394,6 @@
   </div>
 </section>
 <!--end gallery-->
-
-
 
 
 
@@ -676,7 +586,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <!-- <script src="js/owl.js"></script> --> <!-- Disabled: Owl Carousel not used in any pages -->
-    <script src="js/jquery-ui.js"></script>
+    <!-- <script src="js/jquery-ui.js"></script> -->
     <script src="js/appear.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
