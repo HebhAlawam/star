@@ -3619,7 +3619,7 @@ html {
   min-height: 360px;
   padding: 100px 0;
   /* Use CSS variable with fallback image */
-  background-image: var(--hero-bg, url("images/default-hero.jpg"));
+  background-image: var(--hero-bg, url("../images/default-hero.jpg"));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
